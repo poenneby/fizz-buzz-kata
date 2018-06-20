@@ -26,6 +26,6 @@ public class FizzBuzzTest {
 
         FizzBuzz.main("2");
 
-        assertThat(output.toString()).isEqualTo("1\n2");
+        assertThat(output.toString()).isEqualTo("1\n2\n");
     }
 }
