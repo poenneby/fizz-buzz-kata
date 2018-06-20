@@ -17,4 +17,15 @@ public class FizzBuzzTest {
 
         assertThat(output.toString()).isEqualTo("1");
     }
+
+    @Test
+    public void should_print_a_given_amount_of_numbers() throws Exception {
+        ByteArrayOutputStream output = new ByteArrayOutputStream();
+        PrintStream printStream = new PrintStream(output);
+        System.setOut(printStream);
+
+        FizzBuzz.main("2");
+
+        assertThat(output.toString()).isEqualTo("1\n2");
+    }
 }
