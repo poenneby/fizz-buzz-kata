@@ -50,4 +50,10 @@ public class FizzBuzzTest {
                 "FizzBuzz"
         );
     }
+
+    @Test
+    public void should_print_100_numbers() throws Exception {
+        FizzBuzz.main("100");
+        assertThat(output.toString().split("\n").length).isEqualTo(100);
+    }
 }
