@@ -12,7 +12,9 @@ public class FizzBuzzTest {
         ByteArrayOutputStream output = new ByteArrayOutputStream();
         PrintStream printStream = new PrintStream(output);
         System.setOut(printStream);
-        System.out.print("1");
+
+        FizzBuzz.main();
+
         assertThat(output.toString()).isEqualTo("1");
     }
 }
